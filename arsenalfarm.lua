@@ -1,6 +1,8 @@
-
+if game.PlaceId ~= 286090429 then
+    return
+end
 getgenv().Farm = true 
-local server = 45
+local time = 45
 spawn(function()
 while Farm do task.wait()
  pcall(function()
@@ -44,7 +46,7 @@ game:GetService("ReplicatedStorage").Events.FallDamage:FireServer(ohNumber1, ohI
 end end end) end end)
 
 spawn(function()
-while Farm do task.wait(server)
+while Farm do task.wait(time)
 pcall(function()
  for i = 1,9 do 
 local HttpService, TPService = game:GetService("HttpService"), game:GetService("TeleportService")
@@ -53,11 +55,5 @@ local HttpService, TPService = game:GetService("HttpService"), game:GetService("
        if s.playing ~= s.maxPlayers then
            TPService:TeleportToPlaceInstance(game.PlaceId, s.id)
            wait()
-           local CoreGui = game:GetService("StarterGui")
-
-           CoreGui:SetCore("SendNotification", {
-            Title = "Farm";
-            Text = "Changing servers...";
-            Duration = 6;
-           })
+warn("Warned.")
       end end end end) end end)
