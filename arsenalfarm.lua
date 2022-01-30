@@ -30,7 +30,7 @@ function getClosest()
         end
         return ClosetPlayer
         end 
-   game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = getClosest().Character.HumanoidRootPart.CFrame * CFrame.new(0, 0, 5)
+   game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = getClosest().Character.HumanoidRootPart.CFrame * CFrame.new(0, 2, 0)
 end) end end)
 spawn(function()
 while Farm do task.wait(0.2)
