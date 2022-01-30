@@ -1,8 +1,7 @@
 if game.PlaceId ~= 286090429 then
     return
 end
-getgenv().Farm = true 
-local time = 45
+
 spawn(function()
 while Farm do task.wait()
  pcall(function()
