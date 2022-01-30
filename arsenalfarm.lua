@@ -1,6 +1,4 @@
-if game.PlaceId ~= 286090429 then
-    return
-end
+
 getgenv().Farm = true 
 local server = 45
 spawn(function()
