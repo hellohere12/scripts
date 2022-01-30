@@ -2,7 +2,7 @@
 getgenv().Farm = true 
 local server = 45
 spawn(function()
-while AutoFarm do task.wait()
+while Farm do task.wait()
  pcall(function()
 local args = {
  [1] = "TBC"
@@ -45,7 +45,7 @@ game:GetService("ReplicatedStorage").Events.FallDamage:FireServer(ohNumber1, ohI
 end end end) end end)
 
 spawn(function()
-while Farm do task.wait(hop)
+while Farm do task.wait(server)
 pcall(function()
  for i = 1,9 do 
 local HttpService, TPService = game:GetService("HttpService"), game:GetService("TeleportService")
