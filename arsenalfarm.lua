@@ -6,7 +6,6 @@ while Farm do task.wait()
  pcall(function()
 local args = {
  [1] = "TBC"
- [2] = "TRC"
 }
 
 game:GetService("ReplicatedStorage").Events.JoinTeam:FireServer(unpack(args))
